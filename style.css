@@ -6,12 +6,13 @@
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
 
 header {
-   background-image: url(./agro.mp4);
+   
 }
 
 .video-bg {
@@ -60,7 +61,7 @@ header #menu {
    color: #fff;
    position: relative;
    z-index: 1;
-   border-bottom: 2px solid #009e61;
+   border-bottom: 2px solid #228B22;
     
 }
 
@@ -72,7 +73,7 @@ header #menu {
     position: absolute;
     top: 0;
     left: 0;
-    background: #009e61;
+    background: #228B22;
     z-index: -1;
     transition: width 0.5s ease-in-out;
  }
@@ -99,7 +100,7 @@ header #menu {
     text-align: center;
     position: relative;
     font-weight: bold;
-    color: #009e61;
+    color: #228B22 ;
 }
 
 .txt p{
