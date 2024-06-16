@@ -102,8 +102,22 @@
 }
 
 #tecnologia .tec-img {
+    padding: 5px;
     display: inline-block;
     border: 2px solid red;
     width: 250px;
     height: 283px;
+}
+
+#tecnologia .tec-img p {
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+#tecnologia .tec-img input {
+    position: relative;
+    top: 80%;
+    left: 37%;
 }
