@@ -6,6 +6,17 @@
     <title>AgriPrev - Tecnologia e economia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="conteudo.css">
+
+    <link rel="stylesheet" href="conv.css">
+
+    <script src="./convertor.js"></script>
+
+    <script>
+        function flipCard(button) {
+            const card = button.closest('.tec-img');
+            card.classList.toggle('flip');
+        }
+    </script>
 </head>
 <body>
 
@@ -25,9 +36,8 @@
             <div id="menu-t">
                 <ul>
                     <li><a href="#conteudo">Quem somos</a></li>
-                    <li><a href="">Tecnologia</a></li>
-                    <li><a href="">Agroróbotica</a></li>
-                    <li><a href="">Economia</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#eco">Economia</a></li>
                 </ul>
             </div>
         </div>
@@ -69,7 +79,7 @@
 
         </div>
 
-        <section id="tecnologia">
+        <div id="tecnologia">
             <div class="tec-t">
                 <h1>Tecnologia</h1>
                 <div class="tec-p">
@@ -77,60 +87,114 @@
                 </div>
                 
             </div>
+        </div>
+        
+        <section id="tecnologia">
+            
 
             <div class="tec">
                 <div class="tec-img">
-                    <p>ROBÓTICA E AUTOMOÇÃO</p>
-                    <input type="button" value="Saber mais">
+                    <div class="front">
+                        <img src="./imagens/robotica.jpg" alt="Robótica e Automação">
+                        <p>ROBÓTICA E AUTOMAÇÃO</p>
+                        <input type="button" value="Saber mais" onclick="flipCard(this)">
+                    </div>
+                    <div class="back">
+                        <p>Estão se tornando cada vez mais comuns nas fazendas, máquinas autônomas podem trabalhar 24 horas por dia, aumentando a produtividade e reduzindo a necessidade de mão-de-obra humana em tarefas repetitivas e extenuantes.</p>
+                        <input type="button" value="Voltar" onclick="flipCard(this)">
+                    </div>
                 </div>
+            </div>
 
+            <div class="tec">
                 <div class="tec-img">
-                    <p>ROBÓTICA E AUTOMOÇÃO</p>
-                    <input type="button" value="Saber mais">
+                    <div class="front">
+                        <img src="./imagens/artificial.jpg" alt="Robótica e Automação">
+                        <p>Inteligencia Artificial</p>
+                        <input type="button" value="Saber mais" onclick="flipCard(this)">
+                    </div>
+                    <div class="back">
+                        <p>Algoritmos de IA podem prever condições climáticas, identificar pragas e doenças em estágios iniciais e recomendar as melhores práticas de cultivo, aumentando a precisão e a eficiência na produção agrícola.</p>
+                        <input type="button" value="Voltar" onclick="flipCard(this)">
+                    </div>
                 </div>
+            </div>
 
+            <div class="tec">
                 <div class="tec-img">
-                    <p>ROBÓTICA E AUTOMOÇÃO</p>
-                    <input type="button" value="Saber mais">
+                    <div class="front">
+                        <img src="./imagens/analise.jpg" alt="Robótica e Automação">
+                        <p>Análise de Dados e Big Data</p>
+                        <input type="button" value="Saber mais" onclick="flipCard(this)">
+                    </div>
+                    <div class="back">
+                        <p>Com essas informações, é possível planejar melhor a rotação de culturas, gerenciar recursos hídricos e aplicar fertilizantes e pesticidas de maneira mais eficiente, minimizando o impacto ambiental e reduzindo custos.</p>
+                        <input type="button" value="Voltar" onclick="flipCard(this)">
+                    </div>
                 </div>
+            </div>
 
+            <div class="tec">
                 <div class="tec-img">
-                    <p>ROBÓTICA E AUTOMOÇÃO</p>
-                    <input type="button" value="Saber mais">
+                    <div class="front">
+                        <img src="./imagens/drone.jpg" alt="Robótica e Automação">
+                        <p>Drones</p>
+                        <input type="button" value="Saber mais" onclick="flipCard(this)">
+                    </div>
+                    <div class="back">
+                        <p>Equipados com câmeras e sensores avançados. Eles podem identificar grandes áreas que precisam de atenção, como zonas com deficiência hídrica ou infestadas por pragas, permitindo intervenções rápidas e precisas.</p>
+                        <input type="button" value="Voltar" onclick="flipCard(this)">
+                    </div>
                 </div>
+            </div>
 
+            <div class="tec">
                 <div class="tec-img">
-                    <p>ROBÓTICA E AUTOMOÇÃO</p>
-                    <input type="button" value="Saber mais">
+                    <div class="front">
+                        <img src="./imagens/agricultura.jpg" alt="Robótica e Automação">
+                        <p>Agricultura de Precisão</p>
+                        <input type="button" value="Saber mais" onclick="flipCard(this)">
+                    </div>
+                    <div class="back">
+                        <p>utiliza todas essas tecnologias para otimizar cada aspecto da produção agrícola. Trata-se de aplicar a quantidade certa de insumos no momento exato, aumentando a eficiência e a sustentabilidade da produção.</p>
+                        <input type="button" value="Voltar" onclick="flipCard(this)">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="agrorobotica">
-            <div class="rob">
-                <h1>Agrorobótica</h1>
-                <p>Bem-vindo à Agriprev! Somos uma empresa dedicada a revolucionar a agricultura através da integração de robótica e tecnologia de ponta. Nosso objetivo é transformar a maneira como os alimentos são produzidos, trazendo soluções inovadoras que aumentam a eficiência, a sustentabilidade e a rentabilidade para os produtores rurais.</p>
-            </div>
-        </section>
+        <div id="espc">
 
-        <section id="economia">
-            <div class="eco">
-                <h1>Economia</h1>
-                <p>dados</p>
-                <div>
-                    <p>Dolar?</p>
-                    <p>Euro:</p>
+        </div>
+
+        
+        <div class="economia">
+            <h1>Economia</h1>
+            <div class="converter">
+                <div class="espcv">
+                    <h2>USD</h2>
+                    <div class="converter-form">
+                        <label for="usd-amount">Valor em USD:</label>
+                        <input type="number" id="usd-amount" placeholder="Digite o valor em USD" oninput="convertUsdToBrl()">
+                        <div class="result" id="usd-result">BRL: R$ 0,00</div>
+                    </div>
+                </div>
+                
+            
+                <div class="espcv2">
+                    <h2>EUR</h2>
+                    <div class="converter-form">
+                        <label for="eur-amount">Valor em EUR:</label>
+                        <input type="number" id="eur-amount" placeholder="Digite o valor em EUR" oninput="convertEurToBrl()">
+                        <div class="result" id="eur-result">BRL: R$ 0,00</div>
+                    </div>
                 </div>
             </div>
-        </section>
-</div> 
-         
-
     <footer>
         
     </footer>
 
     
 
-</body>
+    </body>
 </html>

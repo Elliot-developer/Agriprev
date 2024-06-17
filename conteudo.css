@@ -7,7 +7,7 @@
     height: 40px;
     margin: 20px;
     border-radius: 50px;
-    border: 3px solid #228B22;
+    border: 3px solid #006398;
     padding: 7px;
 }
 
@@ -24,14 +24,14 @@
 }
 
 .somos h1 {
-    color: #228B22;
+    color: #006398;
     margin-bottom: 10px;
     font-size: 50px;
 }
 
 .somos p {
     font-size: 20px ;
-    color: #2F4F4F;
+    color: #999999;
 }
 
 #quemsomos img {
@@ -47,7 +47,7 @@
     box-shadow: 2px 8px 8px white ;
     width: 100%;
     height: 250px;
-    background-color: #10862a;
+    background-color: #006398;
 }
 
 #empresasa .imagens {
@@ -61,7 +61,7 @@
 }
 
 #empresas img {
-    box-shadow: 4px 8px 20px #10411b;
+    box-shadow: 4px 8px 20px #2F4F4F;
     background-color: #f5f5f5;
     margin-right: 60px;
     margin-left: 60px;
@@ -82,12 +82,14 @@
 }
 
 #tecnologia {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #tecnologia .tec-t {
     display: flex;
     justify-content: space-around;
-    color: #10862a;
+    color: #006398;
 }
 
 #tecnologia h1{
@@ -95,29 +97,136 @@
 }
 
 #tecnologia .tec-p {
-    color: #2F4F4F;
-    font-weight: bold;
+    color: #999999;
+    font-weight: 500;
     width: 400px;
     height: 200px;
 }
 
 #tecnologia .tec-img {
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
     display: inline-block;
-    border: 2px solid red;
+    border: 2px solid #2F4F4F;
     width: 250px;
     height: 283px;
+    margin: 5px;
+    background-size: cover;
+}
+
+#tecnologia .tec-img img {
+    -webkit-filter:brightness(50%);
+    filter:brightness(50%);
+    
+    width: 250px;
+    height: 283px;
+    position: absolute;
+    background-repeat: no-repeat;
+    
 }
 
 #tecnologia .tec-img p {
+    text-transform: uppercase;
+    color: #f5f5f5;
     font-weight: bold;
     position: relative;
-    top: 50%;
     text-align: center;
 }
 
 #tecnologia .tec-img input {
-    position: relative;
-    top: 80%;
-    left: 37%;
+   
+    
 }
+
+
+/* EFEITO DE VIRAR */
+
+.tec {
+    perspective: 1000px;
+}
+
+.tec-img {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.tec-img.flip {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.front {
+    background-color: #f0f0f0;
+}
+
+.front input {
+    position: relative;
+    margin-top: 70px;
+
+
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #006398;
+    color: #f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.back {
+    border: 1px solid black;
+    background-color: #2F4F4F;
+    transform: rotateY(180deg);
+}
+
+.back p {
+    text-align: start;
+    font-size: 12px;
+    
+}
+
+.back input {
+    position: relative;
+    border: none;
+    top: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #006398;
+    color: #f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+

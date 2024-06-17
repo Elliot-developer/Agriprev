@@ -1,0 +1,59 @@
+.converter {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.espcv {
+    padding: 20px;
+    box-shadow: 8px 8px 20px #333;
+    background-color: #ccc;
+    position: absolute;
+    left: 15%;
+}
+
+.espcv2 {
+    padding: 20px;
+    box-shadow: 8px 8px 20px #333;
+    background-color: #ccc;
+    position: absolute;
+    right: 15%;
+}
+
+.economia h1 {
+    color: #006398;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
