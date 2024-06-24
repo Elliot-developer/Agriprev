@@ -43,6 +43,8 @@
     width: 400px;
 }
 
+/* CARDS E TITULO EMPRESAS*/
+
 #empresas {
     box-shadow: 2px 8px 8px white ;
     width: 100%;
@@ -50,7 +52,9 @@
     background-color: #006398;
 }
 
-#empresasa .imagens {
+#empresas .imagens {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #empresas h1 {
@@ -81,22 +85,42 @@
     padding: 100px;
 }
 
-#tecnologia {
-    display: flex;
-    justify-content: space-evenly;
+/* TOPO DE TECNOLOGIA */
+
+#tec-t {
+    color: #006398;
+    margin-bottom: 20px;
 }
 
-#tecnologia .tec-t {
+.tec-txt{
     display: flex;
     justify-content: space-around;
-    color: #006398;
 }
 
-#tecnologia h1{
+.tec-txt h1 {
+    padding-top: 30px;
+}
+
+.tec-px {
+    font-weight: 500;
+    width: 400px;
+    height: 200px;
+    color: #2F4F4F;
+}
+
+#tecnologia {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#tecnologia1 h1{
     font-size: 50px;
 }
 
 #tecnologia .tec-p {
+    flex-direction: column;
     color: #999999;
     font-weight: 500;
     width: 400px;
@@ -230,3 +254,88 @@ input[type="button"] {
     cursor: pointer;
 }
 
+/* ECONOMIA */
+
+#economia {
+    font-size: 40px;
+    text-align: center;
+    color: #006398;
+   
+
+}
+
+#economia-topo {
+    height: 280px;
+}
+
+#economia p {
+    color: #2F4F4F;
+}
+
+.cont-eco {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-eco p {
+    margin-top: 60px;
+    width: 500px;
+    height: 150px;
+}
+
+.img-eco {
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    float: left;
+    display: inline-block;
+    
+
+}
+
+#economia img {
+    object-fit: cover;
+    border-radius: 30px;
+    image-resolution:initial;
+    width: 600px;
+    height: 300px;
+}
+
+#economia .img-eco img:hover {
+    transform: scale(1.1);
+    transition: all .8s ease-in-out;
+}
+
+#empregos-eco{
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.titulo-eco1 {
+    margin-bottom: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+.titulo-eco1 p {
+    width: 800px;
+}
+
+.titulo-eco h1 {
+    font-size: 40px;
+}
+
+
+
+.empregos-eco p{
+
+}
+
+.empregos-l p {
+    
+}

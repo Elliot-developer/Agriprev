@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="conteudo.css">
 
     <link rel="stylesheet" href="conv.css">
-
+    <link rel="stylesheet" href="empregos.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <script src="./empregos.js"></script>
     <script src="./convertor.js"></script>
 
     <script>
@@ -79,10 +82,13 @@
 
         </div>
 
-        <div id="tecnologia">
-            <div class="tec-t">
-                <h1>Tecnologia</h1>
-                <div class="tec-p">
+        <div id="tec-t">
+            <div class="tec-txt">
+                <div>
+                    <h1>Revolução no Campo</h1>
+                </div>
+                
+                <div class="tec-px">
                     <p>A tecnologia está revolucionando a agricultura, trazendo uma nova era de inovação e eficiência para o setor. Conhecida como Agricultura 4.0, essa transformação é impulsionada pela integração de tecnologias avançadas</p>
                 </div>
                 
@@ -168,30 +174,182 @@
         </div>
 
         
-        <div class="economia">
-            <h1>Economia</h1>
-            <div class="converter">
-                <div class="espcv">
-                    <h2>USD</h2>
-                    <div class="converter-form">
-                        <label for="usd-amount">Valor em USD:</label>
-                        <input type="number" id="usd-amount" placeholder="Digite o valor em USD" oninput="convertUsdToBrl()">
-                        <div class="result" id="usd-result">BRL: R$ 0,00</div>
+        <div id="economia">
+            <div id="economia-topo">
+                <h1>Agronegócio</h1>
+                <p>O Impacto Econômico do Agronegócio nas Comunidades Rurais e Urbanas</p>
+            </div>
+
+            <div class="cont-eco">
+                <div>
+                    <p>O agronegócio é um dos pilares fundamentais da economia brasileira, representando uma parte significativa do Produto Interno Bruto (PIB) e das exportações do país. Nas comunidades rurais, seu impacto é ainda mais profundo, sendo responsável pela <span>geração:</span></p>
+                </div>
+
+                <div class="img-eco">
+                    <img src="./imagens/sojacolheita.jpeg" alt="">
+                </div>   
+            </div>
+            <div id="espc">
+
+            </div>
+            <div>
+                <div id="empregos-eco">
+                    <div class="titulo-eco">
+                        <h1>Geração de Emprego</h1>
+                        <div class="titulo-eco1" id="txt-px">
+                            <p>O agronegócio é uma das principais fontes de emprego nas áreas rurais, empregando milhões de trabalhadores em diversas atividades, desde o cultivo até a comercialização. Este setor oferece uma ampla gama de oportunidades de emprego, que vão desde trabalhos não qualificados até funções altamente especializadas.</p>
+                        </div>
                     </div>
+                    
+                    <div class="container">
+                        <div class="card">
+                            <img src="./imagens/empregos/1.png" alt="Emprego 1">
+                            <div class="card-content">
+                                <h2>Trabalhadores Agrícolas</h2>
+                                <p>Os trabalhadores agrícolas são essenciais na produção de alimentos, realizando desde o plantio até a colheita, em diversas condições de trabalho, e são fundamentais para a economia global.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="./imagens/empregos/2.png" alt="Emprego 2">
+                            <div class="card-content">
+                                <h2>Técnicos e Especialistas</h2>
+                                <p>
+                                    Técnicos e especialistas são profissionais especializados que contribuem com conhecimentos técnicos e habilidades específicas em diversas indústrias, promovendo inovação e avanço em seus campos de atuação.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="./imagens/empregos/3.png" alt="Emprego 3">
+                            <div class="card-content">
+                                <h2>Trabalhadores Sazonais</h2>
+                                <p>Trabalhadores sazonais são contratados temporariamente para atender demandas específicas em épocas do ano determinadas, como colheitas agrícolas ou picos de turismo, desempenhando funções por um período limitado.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="./imagens/empregos/4.png" alt="Emprego 4">
+                            <div class="card-content">
+                                <h2>Empregos na Indústria de Insumos
+                                </h2>
+                                <p>Empregos na indústria de insumos são vitais para suprir materiais essenciais em setores como agricultura, manufatura e construção, garantindo a produção contínua de bens e serviços necessários à economia global.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <img src="./imagens/empregos/5.png" alt="Emprego 5">
+                            <div class="card-content">
+                                <h2>Logística e Transporte
+                                </h2>
+                                <p>Logística e transporte na agricultura são essenciais para eficiência na produção e distribuição de alimentos, gerenciando insumos e transporte de produtos finais para os mercados, minimizando perdas e mantendo a qualidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="espc">
+
+                </div>
+                <div class="titulo-eco">
+                    <h1>Renda e Crescimento</h1>
+                    <div class="titulo-eco1" id="txt-px">
+                        <p>A relação entre renda e crescimento na agricultura refere-se à influência do aumento da renda e do desenvolvimento econômico no setor agrícola. À medida que a renda aumenta, a demanda por produtos agrícolas tende a crescer, impulsionando investimentos, inovação e produtividade no setor. Isso pode resultar em maior crescimento econômico e desenvolvimento rural, além de melhorias nas condições de vida dos agricultores e comunidades rurais.</p>
+                    </div>
+
+                    <img src="./imagens/grafico/grafico.png" alt="grafico">
+                </div>
+
+                <div id="espc">
+
+                </div>
+                <div class="titulo-eco">
+                    <h1>Desenvolvimento Sustentável</h1>
+                    <div class="titulo-eco1" id="txt-px">
+                        <p>Desenvolvimento sustentável refere-se ao equilíbrio entre o crescimento econômico, a preservação ambiental e o bem-estar social, visando atender às necessidades presentes sem comprometer as gerações futuras. Isso envolve práticas que garantam o uso responsável dos recursos naturais, a promoção da justiça social, o desenvolvimento econômico inclusivo e a proteção ambiental. O objetivo é criar uma sociedade resiliente e equilibrada, capaz de satisfazer as necessidades atuais sem comprometer o futuro das próximas gerações.
+                        </p>
+                    </div>
+
+                    <img src="./imagens/grafico/grafico2.jpg" alt="">
+                </div>
+
+                <div id="espc">
+
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="desenvolvedor">
+        <div>
+            <h1>Desenvolvedor</h1>
+        </div>
+
+
+        <div class="dev">
+            
+                <div id="devimg">
+                    <img src="./imagens/wellington.jpg" alt="">
                 </div>
                 
-            
-                <div class="espcv2">
-                    <h2>EUR</h2>
-                    <div class="converter-form">
-                        <label for="eur-amount">Valor em EUR:</label>
-                        <input type="number" id="eur-amount" placeholder="Digite o valor em EUR" oninput="convertEurToBrl()">
-                        <div class="result" id="eur-result">BRL: R$ 0,00</div>
-                    </div>
+                
+                <div>
+                    <p>Meu nome é Wellington, tenho 17 anos e descobri minha paixão pela criação de sites aos 14 anos. Desde então, tenho me dedicado ao aprendizado e aprimoramento das linguagens HTML, CSS e JavaScript. O mundo da programação web me fascina pela sua capacidade de criar experiências interativas e funcionais online.
+
+                        Minha jornada começou com projetos simples de páginas estáticas e evoluiu para sites dinâmicos que incorporam animações e funcionalidades avançadas.
+                        Cada projeto me ensina algo novo, desde a importância do design responsivo até a eficiência na organização do código.
+                        Além do desenvolvimento web, tenho interesse em explorar novas tecnologias e frameworks que possam expandir minhas habilidades e possibilitar a criação de experiências ainda mais inovadoras. Estou animado para continuar aprendendo e contribuindo para o mundo digital com meu trabalho.</p>
                 </div>
-            </div>
+        </div>
+
+        <div id="espc">
+
+        </div>
+
+
+</div>
+
+      
+
     <footer>
-        
+        <div id="final">
+            <div>
+                <img src="./imagens/AGRIPREV-removebg-preview.png" alt="">
+            </div>
+
+            <div class="lista">
+                <h2>Agriprev</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Quem somos</a></li>
+                </ul>
+            </div>
+
+            <div class="lista">
+                <h2>Atendimento</h2>
+                <ul>
+                    <li><a href="./index.html">Suporte</a></li>
+                </ul>
+            </div>
+
+            <div class="lista">
+                <h2>Conecte-se</h2>
+                <ul>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Comunicação</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="lista">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     
