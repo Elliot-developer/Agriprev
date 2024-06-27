@@ -65,6 +65,7 @@
 }
 
 #empresas img {
+    lighting-color: #999999;
     box-shadow: 4px 8px 20px #2F4F4F;
     background-color: #f5f5f5;
     margin-right: 60px;
