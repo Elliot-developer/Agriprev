@@ -16,6 +16,10 @@ header {
    
 }
 
+#menu-t {
+    scroll-behavior: smooth;
+}
+
 .video-bg {
     position: absolute;
     -webkit-filter:brightness(50%);
