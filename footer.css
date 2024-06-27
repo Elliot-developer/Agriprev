@@ -24,6 +24,12 @@
     box-shadow: 8px 8px 10px #2F4F4F;
 }
 
+#imgdev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #devimg img:hover {
     transform: translateY(-5px);
 }
