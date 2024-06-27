@@ -246,7 +246,7 @@
 }
 
 /* Estilos para telas menores (exemplo: celulares) */
-only screen and (min-width:321px) and (max-width:768px) {
+only screen and (max-width:768px) {
     body {
         font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
     }
