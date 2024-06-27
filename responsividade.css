@@ -482,6 +482,10 @@ only screen and (max-width:768px) {
         text-align: center;
         width: 100%;
     }
+
+    footer ul li a {
+        font-size: 10px;
+    }
     
     footer img {
         max-width: 250px;
