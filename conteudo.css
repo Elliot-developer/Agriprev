@@ -214,7 +214,6 @@
 
 .back {
     border: 1px solid black;
-    background-color: #2F4F4F;
     transform: rotateY(180deg);
 }
 
