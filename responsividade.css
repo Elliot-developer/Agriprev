@@ -21,6 +21,11 @@
         font-weight: bold;
     }
 
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
     #txt-px {
         height: 500px;
         width: 100%;
