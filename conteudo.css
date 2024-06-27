@@ -167,6 +167,7 @@
 /* EFEITO DE VIRAR */
 
 .tec {
+    background-color: #006398;
     perspective: 1000px;
 }
 
@@ -203,7 +204,7 @@
     position: relative;
     margin-top: 70px;
 
-
+    background-color: #006398;
     border: none;
     padding: 10px;
     border-radius: 20px;
@@ -218,6 +219,7 @@
 }
 
 .back p {
+    
     text-align: start;
     font-size: 12px;
     
