@@ -65,7 +65,7 @@
 }
 
 #empresas img {
-    filter: grayscale(80%);	
+    filter: contrast(-100%);		
     box-shadow: 4px 8px 20px #2F4F4F;
     background-color: #f5f5f5;
     margin-right: 60px;
@@ -79,7 +79,7 @@
 }
 
 #empresasa .imagens img:hover{
-    filter: grayscale(0%);	
+    filter: contrast(100%);	
     transform: scale(1.1);
 }
 
