@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     image-resolution:initial;
-    position: relative;
     object-fit:cover;
     width: 500px;
     height: 500px;
@@ -25,9 +24,11 @@
 }
 
 #imgdev {
-    display: flex;
+    position:relative;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+            display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #devimg img:hover {
