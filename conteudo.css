@@ -142,7 +142,7 @@
 #tecnologia .tec-img img {
     -webkit-filter:brightness(50%);
     filter:brightness(50%);
-    
+    object-fit: cover;
     width: 250px;
     height: 283px;
     position: absolute;
