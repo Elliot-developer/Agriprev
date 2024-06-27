@@ -13,7 +13,8 @@
 }
 
 #devimg img {
-    object-position: top;
+    justify-content: center;
+    align-items: center;
     image-resolution:initial;
     object-fit:cover;
     width: 500px;
