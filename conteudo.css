@@ -270,6 +270,7 @@ input[type="button"] {
 }
 
 #economia p {
+    width: 100%;
     color: #2F4F4F;
 }
 
