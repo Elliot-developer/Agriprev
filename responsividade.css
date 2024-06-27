@@ -16,6 +16,10 @@
        
     }
 
+    #economia p {
+        width: 100%;
+    }
+
     h1 {
         font-size: 25px;
         font-weight: bold;
