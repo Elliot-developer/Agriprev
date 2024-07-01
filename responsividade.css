@@ -160,8 +160,6 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%; /* Largura total */
-        max-width: 300px; /* Largura máxima definida */
-        margin: 10px 0; /* Margens ajustadas */
     }
 
     .dev p {
