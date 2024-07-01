@@ -8,6 +8,10 @@
         height: auto; /* Ajuste na altura do cabeçalho */
     }
 
+    #menu {
+        flex-direction: column;
+    }
+
     #menu .logo {
         display: inline-block;
     }
