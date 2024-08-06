@@ -18,7 +18,6 @@
 
 
 #quemsomos {
-    margin-top: 100px;
     height: 500px;
     display: flex;
     justify-content: space-around;
@@ -340,4 +339,31 @@ input[type="button"] {
 
 .empregos-l p {
     
+}
+
+#grafico #chart_div{
+    background-color: #999999;
+    border-radius: 20px;
+    border: 6px solid #006398; 
+    display: inline-block; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+
+#grafico2 #dual_x_div {
+    width: 100%;
+    border-radius: 20px;
+    border: 6px solid #006398; 
+    display: inline-block; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.fonte {
+    text-decoration: none;
+    font-weight: bold;
+    color: #006398;
 }

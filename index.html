@@ -14,12 +14,81 @@
     <link rel="stylesheet" href="./css/responsividade.css">
     <script src="./empregos.js"></script>
 
-    <script>
-        function flipCard(button) {
-            const card = button.closest('.tec-img');
-            card.classList.toggle('flip');
-        }
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+            ['2019', 322 ,],
+          ['2015', 259 ,],
+          ['2000', 57 ,],
+          ['1966', 41]
+        ]);
+
+        // Set chart options
+        var options = {'title':'PIB - AGRICULTURA | Bilhões',
+                       'width':600,
+                       'height':500
+                        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
     </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawStuff);
+
+  function drawStuff() {
+    var data = new google.visualization.arrayToDataTable([
+      ['IBGE', '' ,''],
+      ['Terra com potencial muito bom \n desenvolvimento agricola', , 2],
+      ['Terra com potencial bom \n desenvolvimento agricola', , 30],
+      ['Terra com potencial com \n restrita potencialidade', , 21],
+      ['Terra com potencial com \n muitas restições', , 11]
+    ]);
+
+    var options = {
+      width: 898,
+      chart: {
+        title: 'Desenvolvimento Sustentavel - PORCENTAGEM',
+        subtitle: 'distribuição da area ocupada'
+      },
+      bars: 'vertical', // Required for Material Bar Charts.
+      series: {
+        0: { axis: '' }, // Bind series 0 to an axis named 'distance'.
+      },
+      axes: {
+        x: {
+          distance: {label: 'parsecs'}, // Bottom x-axis.
+          brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
+        }
+      }
+    };
+
+  var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+  chart.draw(data, options);
+};
+</script>
+
 </head>
 <body>
 
@@ -254,7 +323,11 @@
                         <p>A relação entre renda e crescimento na agricultura refere-se à influência do aumento da renda e do desenvolvimento econômico no setor agrícola. À medida que a renda aumenta, a demanda por produtos agrícolas tende a crescer, impulsionando investimentos, inovação e produtividade no setor. Isso pode resultar em maior crescimento econômico e desenvolvimento rural, além de melhorias nas condições de vida dos agricultores e comunidades rurais.</p>
                     </div>
 
-                    <img src="./imagens/grafico/grafico.png" alt="grafico">
+                    <div id="grafico">
+                        <div id="chart_div"></div>
+                        <p>Fonte: <a href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/agropecuaria-e-unico-setor-com-crescimento-na-pandemia-diz-ibge" class="fonte">IBGE - CNT 1°/2020</a></p>
+                    </div>
+                    
                 </div>
 
                 <div id="espc">
@@ -267,7 +340,11 @@
                         </p>
                     </div>
 
-                    <img src="./imagens/grafico/grafico2.jpg" alt="">
+                    <div id="grafico2">
+                        <div id="dual_x_div" style="width: 900px; height: 500px;"></div>
+                    </div>
+                    <p>Fonte: <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35693-publicacao-inedita-do-ibge-mostra-elevado-potencial-natural-para-a-agricultura-no-pais" class="fonte">IBGE</a></p>
+                    
                 </div>
 
                 <div id="espc">
