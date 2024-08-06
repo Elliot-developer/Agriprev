@@ -56,7 +56,9 @@
 }
 
 footer {
-    
+    width: 100%;
+    align-items: center;
+    text-align: center;
     background-color: #006398;
     height: 400px;
 }
@@ -93,5 +95,58 @@ footer img {
     
     text-decoration: none;
     color:#dadada;
+}
+
+#news {
+    
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#news img {
+    width: 70%;
+}
+
+#news input {
+    margin-right: 10px;
+    margin-top: 40px;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: inline-block;
+    justify-content: center;
+    width: 70%;
+    border-radius: 20px;
+    height: 120px;
+    background-color: #013B8A;
+}
+
+#news select {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#news button {
+    margin-left: 130px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #006398;
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
 }
 

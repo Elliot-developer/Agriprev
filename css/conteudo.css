@@ -18,6 +18,7 @@
 
 
 #quemsomos {
+    margin-top: 100px;
     height: 500px;
     display: flex;
     justify-content: space-around;
