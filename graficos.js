@@ -1,39 +1,31 @@
-const ctx = document.getElementById('meuGrafico').getContext('2d');
-const meuGrafico = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D', 'Produto E'],
-    datasets: [{
-      label: 'Vendas',
-      data: [12500, 10000, 3000, 5000, 8000],
-    }]
-  },
-  options: {
-    plugins: {
-      tooltip: {
-        callbacks: {
-          label: context => {
-            return ' R$ ' + context.parsed.toLocaleString('pt-BR', {
-              minimumFractionDigits: 2,
-              maximumFractionDigits: 2
-            });
-          }
-        }
-      },
-      legend: {
-        position: 'left',
-        labels: {
-          font: { size: 18 }
-        },
-      },
-      title: {
-        display: true,
-        text: 'Total de Vendas por Produto',
-        font: { size: 24 },
-        padding: { bottom: 30 }
-      }
-    },
-    responsive: false,
-    maintainAspectRatio: true
-  }
-});
+const ctx = document.getElementById('line-chart');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                datasets: [{
+                    label: "PIB AGRICULTURA 2019",
+                    data: [41, 45, 48, 51, 63, 82, 106, 111, 101, 105, 120, 142, 149, 160, 190, 201, 240, 250, 259, 307, 303, 304, 322],
+                    fill: false,
+                    borderColor: '#006398',
+                    borderWidth: '5',
+                    pointBorderColor: '#2891c9',
+                    pointBackgroundColor: '#2891c9',
+                    pointBorderWidth: '5'
+                }]
+            },
+            options: {
+              plugins: {
+                  legend: {
+                      labels: {
+                          // This more specific font property overrides the global property
+                          font: {
+                              size: 25
+                          }
+                      }
+                  }
+              }
+          },
+            tension: 0.5
+            
+        });

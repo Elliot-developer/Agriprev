@@ -13,84 +13,22 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsividade.css">
     <script src="./empregos.js"></script>
+    <script src="./js/whatsapp.js"></script>
 
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-
-      // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-            ['2019', 322 ,],
-          ['2015', 259 ,],
-          ['2000', 57 ,],
-          ['1966', 41]
-        ]);
-
-        // Set chart options
-        var options = {'title':'PIB - AGRICULTURA | Bilhões',
-                       'width':600,
-                       'height':500
-                        };
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+    <script>
+        function flipCard(button) {
+            const card = button.closest('.tec-img');
+            card.classList.toggle('flip');
+        }
     </script>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {'packages':['bar']});
-  google.charts.setOnLoadCallback(drawStuff);
-
-  function drawStuff() {
-    var data = new google.visualization.arrayToDataTable([
-      ['IBGE', '' ,''],
-      ['Terra com potencial muito bom \n desenvolvimento agricola', , 2],
-      ['Terra com potencial bom \n desenvolvimento agricola', , 30],
-      ['Terra com potencial com \n restrita potencialidade', , 21],
-      ['Terra com potencial com \n muitas restições', , 11]
-    ]);
-
-    var options = {
-      width: 898,
-      chart: {
-        title: 'Desenvolvimento Sustentavel - PORCENTAGEM',
-        subtitle: 'distribuição da area ocupada'
-      },
-      bars: 'vertical', // Required for Material Bar Charts.
-      series: {
-        0: { axis: '' }, // Bind series 0 to an axis named 'distance'.
-      },
-      axes: {
-        x: {
-          distance: {label: 'parsecs'}, // Bottom x-axis.
-          brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
-        }
-      }
-    };
-
-  var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
-  chart.draw(data, options);
-};
-</script>
-
+    
 </head>
 <body>
+    
+   
+
+
 
     <div id="github">
         <a href="https://github.com/Elliot-developer" target="_blank"><img src="./imagens/GitHub.png" alt="" id="github"></a>
@@ -108,8 +46,8 @@
             <div id="menu-t">
                 <ul>
                     <li><a href="#quemsomos">Quem somos</a></li>
-                    <li><a href="#tec-t">Tecnologia</a></li>
-                    <li><a href="#economia-topo">Economia</a></li>
+                    <li><a href="#tec-t" class="smooth-scroll">Tecnologia</a></li>
+                    <li><a href="#economia-topo" class="smooth-scroll">Economia</a></li>
                 </ul>
             </div>
         </div>
@@ -134,11 +72,11 @@
             <h1>PRINCIPAIS EMPRESAS AGRO</h1>
             <div class="imagens">
 
-                    <img src="./imagens/empresas/amaggi-removebg-preview.png" alt="">
-                    <img src="./imagens/empresas/ambev-removebg-preview.png" alt="">
-                    <img src="./imagens/empresas/bunge-removebg-preview.png" alt="">
-                    <img src="./imagens/empresas/coamo-removebg-preview.png" alt="">
-                    <img src="./imagens/empresas/marfrig-removebg-preview.png" alt="">
+                    <a href="https://www.amaggi.com.br/areas-negocio/agro/" target="_blank"><img src="./imagens/empresas/amaggi-removebg-preview.png" alt=""></a>
+                    <a href="https://www.ambev.com.br/" target="_blank"><img src="./imagens/empresas/ambev-removebg-preview.png" alt=""></a>
+                    <a href="https://www.bunge.com.br/" target="_blank"><img src="./imagens/empresas/bunge-removebg-preview.png" alt=""></a>
+                    <a href="https://www.coamo.com.br/" target="_blank"><img src="./imagens/empresas/coamo-removebg-preview.png" alt=""></a>
+                    <a href="https://www.marfrig.com.br/pt" target="_blank"><img src="./imagens/empresas/marfrig-removebg-preview.png" alt=""></a>
                
             </div>
         </div>
@@ -324,7 +262,9 @@
                     </div>
 
                     <div id="grafico">
-                        <div id="chart_div"></div>
+                        <div>
+                            <canvas id="line-chart" ></canvas>
+                        </div>
                         <p>Fonte: <a href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/agropecuaria-e-unico-setor-com-crescimento-na-pandemia-diz-ibge" class="fonte">IBGE - CNT 1°/2020</a></p>
                     </div>
                     
@@ -341,7 +281,9 @@
                     </div>
 
                     <div id="grafico2">
-                        <div id="dual_x_div" style="width: 900px; height: 500px;"></div>
+                        <div>
+                            <canvas id="bar-chart"></canvas>
+                        </div>
                     </div>
                     <p>Fonte: <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35693-publicacao-inedita-do-ibge-mostra-elevado-potencial-natural-para-a-agricultura-no-pais" class="fonte">IBGE</a></p>
                     
@@ -355,78 +297,22 @@
 
     </div>
 
-    <div class="desenvolvedor">
-        <div>
-            <h1>Desenvolvedor</h1>
-        </div>
-
-
-        <div class="dev">
-            
-                <div id="devimg">
-                    <img src="./imagens/wellington.jpg" alt="" id="imgdev">
-                </div>
-                
-                
-                <div>
-                    <p>Meu nome é Wellington, tenho 17 anos e descobri minha paixão pela criação de sites aos 14 anos. Desde então, tenho me dedicado ao aprendizado e aprimoramento das linguagens HTML, CSS e JavaScript. O mundo da programação web me fascina pela sua capacidade de criar experiências interativas e funcionais online.
-
-                        Minha jornada começou com projetos simples de páginas estáticas e evoluiu para sites dinâmicos que incorporam animações e funcionalidades avançadas.
-                        Cada projeto me ensina algo novo, desde a importância do design responsivo até a eficiência na organização do código.
-                        Além do desenvolvimento web, tenho interesse em explorar novas tecnologias e frameworks que possam expandir minhas habilidades e possibilitar a criação de experiências ainda mais inovadoras. Estou animado para continuar aprendendo e contribuindo para o mundo digital com meu trabalho.</p>
-                </div>
-        </div>
-
-        <div id="espc">
-
-        </div>
-
-        
-    </div>
+</div>
 
 
 
 </div>
 
 <div id="news">
-    
+    <h1>AVALIE NOSSA EMPRESA!</h1>
     <img src="./imagens/mockups/1.png" alt="">
-    <form action="">
+    <form action="#" method="get" onsubmit="abrirWhatsapp()">
                 
-                <input type="text" name="nome" id="" placeholder="NOME">
-            <input type="email" name="" id="" placeholder="E-MAIL">
-            <select name="plataforma">
-                <option value="">ESTADO</option>
-                <option value="ac">AC</option>
-                <option value="ps5">AL</option>
-                <option value="nsw">AP</option>
-                <option value="pcg">AM</option>
-                <option value="ac">BA</option>
-                <option value="ps5">CE</option>
-                <option value="nsw">ES</option>
-                <option value="pcg">GO</option>
-                <option value="ac">MA</option>
-                <option value="ps5">MT</option>
-                <option value="nsw">MS</option>
-                <option value="pcg">MG</option>
-                <option value="ps5">PA</option>
-                <option value="nsw">PB</option>
-                <option value="pcg">PR</option>
-                <option value="ps5">PE</option>
-                <option value="nsw">PI</option>
-                <option value="pcg">RJ</option>
-                <option value="ps5">RN</option>
-                <option value="nsw">RS</option>
-                <option value="pcg">RO</option>
-                <option value="ps5">RR</option>
-                <option value="nsw">SC</option>
-                <option value="pcg">SP</option>
-                <option value="ps5">SE</option>
-                <option value="nsw">TO</option>
-                <option value="pcg">DF</option>
-            </select>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input name="email" id="email" placeholder="E-mail" required>
+            <textarea name="msg" id="msg" placeholder="Avaliação" cols="30" rows="5" required></textarea>
             
-            <a href="https://mail.google.com/mail/u/1/#all" target="_blank"><button type="submit" value="Enviar">Enviar</button></a>
+            <button type="submit" value="Enviar" >Enviar</button>
         </div>
        
     </form>
@@ -450,6 +336,7 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#quemsomos">Quem somos</a></li>
+                    <li><a href="./desenvolvedor.html">Desenvolvedor</a></li>
                 </ul>
             </div>
 
@@ -483,4 +370,9 @@
     
 
     </body>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./graficos.js"></script>
+    <script src="./graficos2.js"></script>
 </html>
