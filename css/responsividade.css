@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1024px) {
+    .video-bg {
+        background-repeat: no-repeat;
+    }
+
     .dev p {
         width: 70%;
         align-items: center;
@@ -19,11 +23,13 @@
     }
 
     #menu {
-        flex-direction: column;
+        display: none;
     }
 
     #menu .logo {
-        display: inline-block;
+        display: none;
+        top: 0;
+        right: 0;
     }
 
     .txt {
@@ -80,13 +86,24 @@
         height: 100%; /* Ajuste na altura */
     }
 
+
     #empresas .imagens {
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap; /* Quebra de linha para as imagens das empresas */
         justify-content: center; /* Centralização das imagens */
     }
 
     #empresas .imagens img {
+        justify-content: center;
+        align-items: center;
         width: 20%;
+    }
+
+    #empresas a {
+        align-items: center;
+        flex-wrap: wrap; /* Quebra de linha para as imagens das empresas */
+        justify-content: center; /* Centralização das imagens */
     }
 
     #tec-t {
@@ -269,25 +286,86 @@
         filter: invert(75%);
         filter: brightness(0.4);
     }
+
+    #news form {
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        margin-top: 10px;
+    }
+
+    #news form button {
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
     
 }
 
-/* Estilos para telas menores (exemplo: celulares) */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:913px) {
     body {
         font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
     }
 
+    header
+
+    .video-bg {
+        background-repeat: no-repeat;
+    }
+
     header {
+        background-repeat: no-repeat;
         height: auto; /* Ajuste na altura do cabeçalho */
     }
 
-    #menu .logo {
-        display: inline-block;
+    #menu-t {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    #menu-t ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu-t ul li {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    #menu-t ul li a {
+        font-size: 16px;
+    }
+
+    #menu-t.open {
+        display: flex;
+    }
+
+    .logo img {
+        margin-top: 0px;
+        margin-left: 20px;
+        width: 70px;
+        height: 60px;
+    }
+
+    .espc-div {
+        display: none;
     }
 
     .txt {
-       
+       display: none;
     }
 
     #economia p {
@@ -305,7 +383,7 @@
     }
 
     #txt-px {
-        height: 500px;
+        height: 200px;
         width: 100%;
         margin-bottom: 50px;
     }
@@ -337,16 +415,35 @@
     }
 
     #empresas {
-        height: auto; /* Ajuste na altura */
+        height: auto;
+        height: 100%; /* Ajuste na altura */
+    }
+
+    #empresas li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas li {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
     }
 
     #empresas .imagens {
-        flex-wrap: wrap; /* Quebra de linha para as imagens das empresas */
-        justify-content: center; /* Centralização das imagens */
+        align-items: center;
+        flex-direction: column;
     }
 
     #empresas .imagens img {
-        width: 20%;
+        width: 10%;
+    }
+
+    #empresas a {
+
     }
 
     #tec-t {
@@ -377,6 +474,10 @@
     .front input,
     .back input {
         margin-top: 20px; /* Espaçamento ajustado nos botões */
+    }
+
+    #economia-topo {
+        height: 80px;
     }
 
     #economia {
@@ -422,10 +523,18 @@
         align-items: center; /* Centralização dos elementos */
     }
 
+    #devimg {
+        width: 100%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
     #devimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%; /* Largura total */
-        max-width: 300px; /* Largura máxima definida */
-        margin: 10px 0; /* Margens ajustadas */
     }
 
     .dev p {
@@ -469,7 +578,8 @@
         justify-content: center;
         text-align: center;
         color: #fff;
-        background-color: #006398;
+        background-image: url(/imagens/mockups/1cell.png);
+
     }
     
     header .video-bg {
@@ -509,9 +619,304 @@
         text-align: center;
         width: 100%;
     }
+    
+    footer img {
+        max-width: 250px;
+        height: auto;
+        filter: invert(75%);
+        filter: brightness(0.4);
+    }
 
-    footer ul li a {
-        font-size: 10px;
+    #news form {
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        margin-top: 10px;
+    }
+
+    #news form button {
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+}
+
+/* Estilos para telas menores (exemplo: celulares) */
+@media only screen and (max-width:768px) {
+    body {
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
+    }
+
+    .video-bg {
+        background-repeat: no-re;
+    }
+
+    header {
+
+        height: auto; /* Ajuste na altura do cabeçalho */
+    }
+
+    .txt {
+       display: none;
+    }
+
+    #economia p {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #txt-px {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cont-eco p {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #quemsomos {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+        height: auto; /* Ajuste na altura */
+    }
+
+    #quemsomos img {
+        width: 100%; /* Imagem de quem somos ajustada para largura máxima */
+        max-width: 300px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+    }
+
+    #quemsomos p {
+        margin-bottom: 70px;
+    }
+
+    .somos {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #empresas {
+        height: auto;
+        height: 100%; /* Ajuste na altura */
+    }
+
+    #empresas li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas li {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas .imagens {
+            flex-wrap: wrap;
+    }
+
+    #empresas .imagens img {
+        width: 20%;
+    }
+
+    #empresas a {
+
+    }
+
+    #tec-t {
+        text-align: center; /* Centralização do título de tecnologia */
+    }
+
+    .tec-txt {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-px {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #tecnologia {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-img {
+        width: 100%; /* Largura total */
+        max-width: 250px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .front input,
+    .back input {
+        margin-top: 20px; /* Espaçamento ajustado nos botões */
+    }
+
+    #economia-topo {
+        height: 80px;
+    }
+
+    #economia {
+        text-align: center; /* Centralização do título de economia */
+    }
+
+    .cont-eco {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .img-eco {
+        width: 100%; /* Largura total */
+        max-width: 300px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .titulo-eco1 {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .titulo-eco h1 {
+        font-size: 30px; /* Tamanho de fonte reduzido */
+    }
+
+    .empregos-eco p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .container {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .card {
+        width: 80%; /* Largura ajustada */
+    }
+
+    .dev {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    #devimg {
+        width: 100%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #devimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Largura total */
+    }
+
+    .dev p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer {
+        height: auto; /* Ajuste na altura */
+    }
+
+    #final {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .lista {
+        margin-top: 20px; /* Margem superior ajustada */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer img {
+        max-width: 150px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+        margin-top: 20px; /* Margem superior ajustada */
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background-image: url(/imagens/mockups/1cell.png);
+
+    }
+    
+    header .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .txt h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .txt p {
+        font-size: 2rem;
+        color: #f5f5f5;
+    }
+    
+    /* ... estilos para outras seções ... */
+    
+    footer {
+        background-color: #006398;
+        color: #dadada;
+        padding: 50px 0;
+        text-align: center;
+        width: 100%;
     }
     
     footer img {
@@ -520,12 +925,972 @@
         filter: invert(75%);
         filter: brightness(0.4);
     }
+
+    #news form {
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        margin-top: 10px;
+    }
+
+    #news form button {
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
+    
 
-/* Estilos gerais para todas as telas */
+@media (max-width:320px) { 
+    body {
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
+    }
 
+    header {
+        height: auto; /* Ajuste na altura do cabeçalho */
+    }
 
+    #menu {
+        display: none;
+    }
 
+    #menu .logo {
+        display: none;
+        top: 0;
+        right: 0;
+    }
 
+    .txt {
+       display: none;
+    }
 
+    #economia p {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #txt-px {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cont-eco p {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #quemsomos {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+        height: auto; /* Ajuste na altura */
+    }
+
+    #quemsomos img {
+        width: 100%; /* Imagem de quem somos ajustada para largura máxima */
+        max-width: 300px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+    }
+
+    #quemsomos p {
+        margin-bottom: 70px;
+    }
+
+    .somos {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #empresas {
+        height: auto;
+        height: 100%; /* Ajuste na altura */
+    }
+
+    #empresas li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas li {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas .imagens {
+            flex-wrap: wrap;
+    }
+
+    #empresas .imagens img {
+        width: 20%;
+    }
+
+    #empresas a {
+
+    }
+
+    #tec-t {
+        text-align: center; /* Centralização do título de tecnologia */
+    }
+
+    .tec-txt {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-px {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #tecnologia {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-img {
+        width: 100%; /* Largura total */
+        max-width: 250px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .front input,
+    .back input {
+        margin-top: 20px; /* Espaçamento ajustado nos botões */
+    }
+
+    #economia-topo {
+        height: 80px;
+    }
+
+    #economia {
+        text-align: center; /* Centralização do título de economia */
+    }
+
+    .cont-eco {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .img-eco {
+        width: 100%; /* Largura total */
+        max-width: 300px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .titulo-eco1 {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .titulo-eco h1 {
+        font-size: 30px; /* Tamanho de fonte reduzido */
+    }
+
+    .empregos-eco p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .container {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .card {
+        width: 80%; /* Largura ajustada */
+    }
+
+    .dev {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    #devimg {
+        width: 100%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #devimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Largura total */
+    }
+
+    .dev p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer {
+        height: auto; /* Ajuste na altura */
+    }
+
+    #final {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .lista {
+        margin-top: 20px; /* Margem superior ajustada */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer img {
+        max-width: 150px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+        margin-top: 20px; /* Margem superior ajustada */
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background-image: url(/imagens/mockups/1cell.png);
+
+    }
+    
+    header .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .txt h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .txt p {
+        font-size: 2rem;
+        color: #f5f5f5;
+    }
+    
+    /* ... estilos para outras seções ... */
+    
+    footer {
+        background-color: #006398;
+        color: #dadada;
+        padding: 50px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    footer img {
+        max-width: 250px;
+        height: auto;
+        filter: invert(75%);
+        filter: brightness(0.4);
+    }
+
+    #news form {
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        margin-top: 10px;
+    }
+
+    #news form button {
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+    
+}
+@media (max-width:480px) { 
+    body {
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
+    }
+
+    header {
+        height: auto; /* Ajuste na altura do cabeçalho */
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu .logo {
+        display: none;
+        top: 0;
+        right: 0;
+    }
+
+    .txt {
+       display: none;
+    }
+
+    #economia p {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #txt-px {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cont-eco p {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #quemsomos {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+        height: auto; /* Ajuste na altura */
+    }
+
+    #quemsomos img {
+        width: 100%; /* Imagem de quem somos ajustada para largura máxima */
+        max-width: 300px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+    }
+
+    #quemsomos p {
+        margin-bottom: 70px;
+    }
+
+    .somos {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #empresas {
+        height: auto;
+        height: 100%; /* Ajuste na altura */
+    }
+
+    #empresas li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas li {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas .imagens {
+            flex-wrap: wrap;
+    }
+
+    #empresas .imagens img {
+        width: 20%;
+    }
+
+    #empresas a {
+
+    }
+
+    #tec-t {
+        text-align: center; /* Centralização do título de tecnologia */
+    }
+
+    .tec-txt {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-px {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #tecnologia {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-img {
+        width: 100%; /* Largura total */
+        max-width: 250px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .front input,
+    .back input {
+        margin-top: 20px; /* Espaçamento ajustado nos botões */
+    }
+
+    #economia-topo {
+        height: 80px;
+    }
+
+    #economia {
+        text-align: center; /* Centralização do título de economia */
+    }
+
+    .cont-eco {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .img-eco {
+        width: 100%; /* Largura total */
+        max-width: 300px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .titulo-eco1 {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .titulo-eco h1 {
+        font-size: 30px; /* Tamanho de fonte reduzido */
+    }
+
+    .empregos-eco p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .container {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .card {
+        width: 80%; /* Largura ajustada */
+    }
+
+    .dev {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    #devimg {
+        width: 100%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #devimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Largura total */
+    }
+
+    .dev p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer {
+        height: auto; /* Ajuste na altura */
+    }
+
+    #final {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .lista {
+        margin-top: 20px; /* Margem superior ajustada */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer img {
+        max-width: 150px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+        margin-top: 20px; /* Margem superior ajustada */
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background-image: url(/imagens/mockups/1cell.png);
+
+    }
+    
+    header .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .txt h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .txt p {
+        font-size: 2rem;
+        color: #f5f5f5;
+    }
+    
+    /* ... estilos para outras seções ... */
+    
+    footer {
+        background-color: #006398;
+        color: #dadada;
+        padding: 50px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    footer img {
+        max-width: 250px;
+        height: auto;
+        filter: invert(75%);
+        filter: brightness(0.4);
+    }
+
+    #news form {
+        flex-direction: column;
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        margin-top: 10px;
+    }
+
+    #news form button {
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+    
+ }
+
+@media (max-width:540px) {
+    #news form {
+        flex-direction: column;
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    #news form button {
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:800px) { 
+    body {
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste em telas menores */
+    }
+
+    header {
+        height: auto; /* Ajuste na altura do cabeçalho */
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu .logo {
+        display: none;
+        top: 0;
+        right: 0;
+    }
+
+    .txt {
+       display: none;
+    }
+
+    #economia p {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #txt-px {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cont-eco p {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #quemsomos {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+        height: auto; /* Ajuste na altura */
+    }
+
+    #quemsomos img {
+        width: 100%; /* Imagem de quem somos ajustada para largura máxima */
+        max-width: 300px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+    }
+
+    #quemsomos p {
+        margin-bottom: 70px;
+    }
+
+    .somos {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #empresas {
+        height: auto;
+        height: 100%; /* Ajuste na altura */
+    }
+
+    #empresas li a {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas li {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #empresas .imagens {
+            flex-wrap: wrap;
+    }
+
+    #empresas .imagens img {
+        width: 20%;
+    }
+
+    #empresas a {
+
+    }
+
+    #tec-t {
+        text-align: center; /* Centralização do título de tecnologia */
+    }
+
+    .tec-txt {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-px {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    #tecnologia {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .tec-img {
+        width: 100%; /* Largura total */
+        max-width: 250px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .front input,
+    .back input {
+        margin-top: 20px; /* Espaçamento ajustado nos botões */
+    }
+
+    #economia-topo {
+        height: 80px;
+    }
+
+    #economia {
+        text-align: center; /* Centralização do título de economia */
+    }
+
+    .cont-eco {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .img-eco {
+        width: 100%; /* Largura total */
+        max-width: 300px; /* Largura máxima definida */
+        margin: 10px 0; /* Margens ajustadas */
+    }
+
+    .titulo-eco1 {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .titulo-eco h1 {
+        font-size: 30px; /* Tamanho de fonte reduzido */
+    }
+
+    .empregos-eco p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    .container {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .card {
+        width: 80%; /* Largura ajustada */
+    }
+
+    .dev {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    #devimg {
+        width: 100%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #devimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Largura total */
+    }
+
+    .dev p {
+        width: 100%; /* Largura total */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer {
+        height: auto; /* Ajuste na altura */
+    }
+
+    #final {
+        flex-direction: column; /* Mudança para layout de coluna */
+        align-items: center; /* Centralização dos elementos */
+    }
+
+    .lista {
+        margin-top: 20px; /* Margem superior ajustada */
+        text-align: center; /* Centralização do texto */
+    }
+
+    footer img {
+        max-width: 150px; /* Largura máxima definida */
+        height: auto; /* Altura automática */
+        margin-top: 20px; /* Margem superior ajustada */
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        background-image: url(/imagens/mockups/1cell.png);
+
+    }
+    
+    header .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .txt h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .txt p {
+        font-size: 2rem;
+        color: #f5f5f5;
+    }
+    
+    /* ... estilos para outras seções ... */
+    
+    footer {
+        background-color: #006398;
+        color: #dadada;
+        padding: 50px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    footer img {
+        max-width: 250px;
+        height: auto;
+        filter: invert(75%);
+        filter: brightness(0.4);
+    }
+
+    #news form {
+        flex-direction: column;
+        margin-top: 0px;
+        background-color: #013B8A;
+        height: 100%;
+    }
+
+    #news form input {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    #news form button {
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #news h1 {
+        font-size: 30px;
+    }
+    
+}

@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="./css/empregos.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="stylesheet" href="./css/hamburguer.css">
+    <script src="./js/hamburguer.js"></script>
     <script src="./empregos.js"></script>
     <script src="./js/whatsapp.js"></script>
+    
 
     <script>
         function flipCard(button) {
@@ -42,6 +45,7 @@
             <div class="logo">
                 <img src="./imagens/AGRIPREV-removebg-preview.png">
             </div>
+        
 
             <div id="menu-t">
                 <ul>
@@ -49,13 +53,17 @@
                     <li><a href="#tec-t" class="smooth-scroll">Tecnologia</a></li>
                     <li><a href="#economia-topo" class="smooth-scroll">Economia</a></li>
                 </ul>
-            </div>
-        </div>
 
+                
+            </div>
+
+            
+        
        
    </header>
 
-   <div style="display: block; height: 450px;">
+
+   <div class="espc-div">
 
    </div>
 
@@ -71,12 +79,12 @@
         <div id="empresas">
             <h1>PRINCIPAIS EMPRESAS AGRO</h1>
             <div class="imagens">
-
-                    <a href="https://www.amaggi.com.br/areas-negocio/agro/" target="_blank"><img src="./imagens/empresas/amaggi-removebg-preview.png" alt=""></a>
-                    <a href="https://www.ambev.com.br/" target="_blank"><img src="./imagens/empresas/ambev-removebg-preview.png" alt=""></a>
-                    <a href="https://www.bunge.com.br/" target="_blank"><img src="./imagens/empresas/bunge-removebg-preview.png" alt=""></a>
-                    <a href="https://www.coamo.com.br/" target="_blank"><img src="./imagens/empresas/coamo-removebg-preview.png" alt=""></a>
-                    <a href="https://www.marfrig.com.br/pt" target="_blank"><img src="./imagens/empresas/marfrig-removebg-preview.png" alt=""></a>
+                <img src="./imagens/empresas/amaggi-removebg-preview.png" alt="">
+                <img src="./imagens/empresas/ambev-removebg-preview.png" alt="">
+                <img src="./imagens/empresas/bunge-removebg-preview.png" alt="">
+                <img src="./imagens/empresas/coamo-removebg-preview.png" alt="">
+                <img src="./imagens/empresas/marfrig-removebg-preview.png" alt="">
+                
                
             </div>
         </div>
@@ -285,7 +293,13 @@
                             <canvas id="bar-chart"></canvas>
                         </div>
                     </div>
-                    <p>Fonte: <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35693-publicacao-inedita-do-ibge-mostra-elevado-potencial-natural-para-a-agricultura-no-pais" class="fonte">IBGE</a></p>
+                    <p style="margin-bottom: 40px;">Fonte: <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/35693-publicacao-inedita-do-ibge-mostra-elevado-potencial-natural-para-a-agricultura-no-pais" class="fonte">IBGE</a></p>
+                    <p><span style="color: #006398;">Classe A1</span> - Terras com muito boa potencialidade ao desenvolvimento agrícola</p>
+                    <p><span style="color: #006398;">Classe A2</span> - Terras com boa potencialidade ao desenvolvimento agrícola </p>
+                    <p><span style="color: #006398;">Classe B</span> - Terras com moderada potencialidade ao desenvolvimento agrícola</p>
+                    <p><span style="color: #006398;">Classe C</span> - Terras com restrita potencialidade ao desenvolvimento agrícola</p>
+                    <p><span style="color: #006398;">Classe D</span> - Terras com restrições muito fortes de potencialidade ao desenvolvimento agrícola</p>
+
                     
                 </div>
 
@@ -304,13 +318,12 @@
 </div>
 
 <div id="news">
-    <h1>AVALIE NOSSA EMPRESA!</h1>
+    <h1>Avalie nossa empresa!</h1>
     <img src="./imagens/mockups/1.png" alt="">
     <form action="#" method="get" onsubmit="abrirWhatsapp()">
                 
-                <input type="text" name="nome" id="nome" placeholder="Nome" required>
-            <input name="email" id="email" placeholder="E-mail" required>
-            <textarea name="msg" id="msg" placeholder="Avaliação" cols="30" rows="5" required></textarea>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input name="text" id="msg" placeholder="Avaliação" required>
             
             <button type="submit" value="Enviar" >Enviar</button>
         </div>

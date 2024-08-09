@@ -107,17 +107,22 @@ footer img {
     justify-content: center;
 }
 
+#news h1 {
+    font-size: 50px;
+    color: #01527e;
+    margin-bottom: 50px;
+}
+
 
 #news img {
     width: 70%;
 }
 
 #news input {
+    border: none;
     margin-right: 10px;
     margin-top: 40px;
-    border: 1px solid black;
     justify-content: center;
-    text-align: center;
     display: inline-block;
     align-items: center;
     padding: 10px;
@@ -140,6 +145,7 @@ form {
 }
 
 #news button {
+    cursor: pointer;
     margin-left: 130px;
     font-weight: bold;
     color: white;
@@ -149,4 +155,20 @@ form {
     padding: 10px;
     border-radius: 10px;
 }
+
+#news button:hover {
+    background-color: #026092;
+}
+
+#news textarea {
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    resize: none;
+    width: 130px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
 

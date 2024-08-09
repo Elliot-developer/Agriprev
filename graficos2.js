@@ -4,7 +4,7 @@ new Chart(ctz, {
     type: 'bar',
    
     data: {
-        labels: ["Classe A1 - Terras com muito boa potencialidade ao desenvolvimento agrícola", "Classe A2", "Classe B", "Classe C", "Classe D"],
+        labels: ["Classe A1", "Classe A2", "Classe B", "Classe C", "Classe D"],
         datasets: [{
             label: "Classes de potencialidade agrícola natural das terras",
             data: [2, 30, 33, 21, 11],

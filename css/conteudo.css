@@ -64,8 +64,8 @@
     color: #f5f5f5;
 }
 
-#empresas img {
-	box-shadow: 4px 8px 20px #2F4F4F;
+#empresas .imagens img {
+	box-shadow: 4px 8px 20px #003755;
     background-color: #f5f5f5;
     margin-right: 60px;
     margin-left: 60px;
@@ -75,10 +75,13 @@
     border: 2px solid black;
     padding: 10px;
     border-radius: 70%;
+
+    transition: transform 1s ease;
 }
 
-#empresasa .imagens img:hover{
-    transform: scale(1.1);
+#empresas .imagens img:hover{
+    transform: scale(1.2);
+
 }
 
 #espc{
@@ -301,11 +304,21 @@ input[type="button"] {
     image-resolution:initial;
     width: 600px;
     height: 300px;
+    
 }
 
-#economia .img-eco img:hover {
-    transform: scale(1.1);
-    transition: all .8s ease-in-out;
+.img-eco img {
+    transition: transform 2s ease;
+}
+
+.img-eco img:hover{
+    transform: scale(1.2);
+
+}
+
+#economia img:hover{
+    
+    
 }
 
 #empregos-eco{
