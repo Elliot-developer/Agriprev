@@ -2,16 +2,17 @@
 Este repositório contém o código-fonte do AgriPrev, um site dedicado à interseção entre agricultura e tecnologia. O objetivo do site é mostrar como as inovações tecnológicas estão transformando o setor agrícola e impulsionando a economia global.
 
 # ESTRUTURA DO SITE
-**Início**
-**Quem Somos**
-**Empresas**
-**Tecnologias**
-**Agronegócio/Economia**
-**Geração de Emprego**
-**Renda e Crescimento**
-**Desenvolvimento Sustentável**
-**Avalie Nossa Empresa**
-**Footer**
+#
+- **Início**
+- **Quem Somos**
+- **Empresas**
+- **Tecnologias**
+- **Agronegócio/Economia**
+- **Geração de Emprego**
+- **Renda e Crescimento**
+- **Desenvolvimento Sustentável**
+- **Avalie Nossa Empresa**
+- **Footer**
 
 ## Topo
 Acesse o conteúdo do site. Ao acessar o site pela URL agriprev.vercel.app, o usuário inicia a introdução ao AgriPrev, utilizando o menu inicial:
