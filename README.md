@@ -4,7 +4,7 @@ Este repositório contém o código-fonte do **AgriPrev**, um site dedicado à i
 ## ESTRUTURA DO SITE
 
 - **Inicio**
-- **Quem Somos***
+- **Quem Somos**
 - **Empresas**
 - **Tecnologias**
 - **Agronegócio/Economia**
@@ -15,7 +15,7 @@ Este repositório contém o código-fonte do **AgriPrev**, um site dedicado à i
 - **Footer**
 
 
-**Topo:**
+## Topo:
 
 Acessa o conteudo do site
 Acessando o site pela url **agriprev.vercel.app**, o usuario da inicio a introdução a agriprev, utilizando o menu incial:
@@ -34,7 +34,7 @@ Onde é possivel acessar o conteudo do site
 #
 
 ## Economia:
-Explicação do agronegócio e sua importancia, uma delas na geração de empregos, ao passar o mouse ou clicando o card interegi dando destaque no card visualizado
+- Explicação do agronegócio e sua importancia, uma delas na geração de empregos, ao passar o mouse ou clicando o card interegi dando destaque no card visualizado
 
 ## Footer:
 
@@ -42,7 +42,7 @@ Explicação do agronegócio e sua importancia, uma delas na geração de empreg
 O usuario pode avaliar nossa empresa/site, digitando seu nome e avaliação que pode ser escrita ou uma nota numerica, ao enviar o usuario é linkado para o whatsapp com a mensagem digitada
 
 -   Desenvolvedor: 
-#Menu encontrado ao final da pagina, a mesma mostra uma breve biografia do meu trabalho que acompanha um botão de saber mais, onde o usuario é linkado ao whatsapp com uma mensagem pré escrita, home ira retornar a pagina.
+Menu encontrado ao final da pagina, a mesma mostra uma breve biografia do meu trabalho que acompanha um botão de saber mais, onde o usuario é linkado ao whatsapp com uma mensagem pré escrita, home ira retornar a pagina.
 ## Projeto Responsivo
 
 - Este repositório contém o código-fonte de um site responsivo, projetado para oferecer uma experiência de usuário consistente e agradável em dispositivos de diferentes tamanhos de tela, desde smartphones até desktops.
@@ -50,5 +50,5 @@ O usuario pode avaliar nossa empresa/site, digitando seu nome e avaliação que 
 ## Desenvolvedor: 
 - Menu encontrado ao final da pagina, a mesma mostra uma breve biografia do meu trabalho que acompanha um botão de saber mais, onde o usuario é linkado ao whatsapp com uma mensagem pré escrita, home ira retornar a pagina.
 
-# TECNOLOGIAS UTILIZADAS
+## TECNOLOGIAS UTILIZADAS
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
