@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriprev - Desenvolvedor</title>
 
     <link rel="shortcut icon" href="/imagens/Design-sem-nome.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/desenvolvedor.css">
 </head>
+
 <body>
-    <div id="conteudo">
-        <div id="dev">
-            <div class="logo">
-                <img src="./imagens/AGRIPREV-removebg-preview.png" alt="Logo Agriprev">
-            </div>
-            <h3>Desenvolvedor front-end</h3>
-            <h1>WELLINGTON PEREIRA</h1>
-            <div class="bio">
-                <p>Explorando a arte da programação para transformar ideias em realidade, estudo programação desde os 14 anos, colaborador de diversos projetos em equipe, utilizando tecnologias de front-end</p>
-            </div>
-            <a href="https://wa.me/5541999847130?text=Ol%C3%A1%2C%20queria%20*saber%20mais*%20do%20seu%20trabalho." target="_blank" style="background-color: #006398; border: none; font-weight: bold; color: black;">Saber mais</a>
+    <div class="container">
+        <img class="logo" src="./imagens/AGRIPREV-removebg-preview.png" alt="Logo Agriprev">
+        <h3>Desenvolvedor front-end</h3>
+        <h1>WELLINGTON PEREIRA</h1>
+        <p>Explorando a arte da programação para transformar ideias em realidade, estudo programação desde os 14
+            anos, colaborador de diversos projetos em equipe, utilizando tecnologias de front-end</p>
+        <div class="botoes">
+            <a class="saberMais" href="https://wa.me/5541999847130?text=Olá%2C%20queria%20*saber%20mais*%20do%20seu%20trabalho."
+                target="_blank">
+                Saber mais
+            </a>
             <a href="index.html">Home</a>
         </div>
-
-        <div id="wellington">
-            <div id="devimg">
-                <img src="./imagens/wellington.jpg" alt="Wellington Pereira" id="imgdev">
-            </div>
-        </div>
+        <img class="imgdev" src="./imagens/wellington.jpg" alt="Wellington Pereira">
     </div>
 </body>
+
+<style>
+    
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;}
+
+    body {
+        background-color: #f8ffff;
+        color: #161413;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25%;
+        gap: 30px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h3 {
+        color: #006398;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 20px;
+        font-weight: 600;
+    }
+
+    .botoes a {
+        text-decoration: none;
+        color: #161413;
+        padding: 10px 20px;
+        border: 1px solid #161413;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .botoes a:hover {
+        background-color: #006398;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .botoes .saberMais {
+        background-color: #006398;
+        border: none;
+        color: #fff;
+        border: 1px solid #006398;
+    }
+
+    .botoes .saberMais:hover {
+        background-color: #fff;
+        color: #006398;
+        transition: 0.3s;
+        border: 1px solid #006398;
+        transition: 0.3s;
+    }
+
+    .imgdev {
+        width: 70%;
+        border-radius: 8px;
+    }
+
+</style>
+
 </html>
